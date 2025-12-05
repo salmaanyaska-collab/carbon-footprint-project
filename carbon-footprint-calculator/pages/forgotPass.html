@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 50px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: hsl(132, 90%, 28%);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: hsl(132, 90%, 28%);
+        }
+
+        .switch-form {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .switch-form a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .switch-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Forgot your password?</h2>
+        <p>Please enter your email address to receive password reset instructions.</p>
+        <form id="forgot-password-form">
+            <div class="form-group">
+                <label for="forgot-email">Email</label>
+                <input type="email" id="forgot-email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit">Reset Password</button>
+        </form>
+        <div class="switch-form">
+            <p>Remember your password? <a href="signin.html" onclick="backToLogin()">Back to Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('forgot-password-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('forgot-email').value;
+            if (email) {
+                alert('Password reset instructions have been sent to ' + email);
+                document.getElementById('forgot-password-form').reset();
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        function backToLogin() {
+            window.location.href = 'backToLogin.html';  // Redirect back to the login page
+        }
+    </script>
+</body>
+</html>

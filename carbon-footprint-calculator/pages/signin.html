@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    outline: none;
+    font-size: 1rem;    
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #3b82f6, #6ee7b7);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2563eb, #4ade80);
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    margin-right: 0.5rem;
+}
+
+.cancelbtn:hover {
+    background-color: #d32f2f;
+}
+
+.clearfix button {
+    width: 48%;
+    margin: 0.5rem 1%;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1.5rem 0;
+}
+
+.extra-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.extra-links a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+    color: #2563eb;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.switch-form a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.switch-form a:hover {
+    color: #2563eb;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    margin-top:20px;
+}
+
+.clearfix {
+    display: flex;
+    justify-content: space-between;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome Back!</h2>
+        <!-- Login Form -->
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="uname">Username</label>
+                <input type="text" placeholder="Enter Username" name="username" id="uname" required>
+            </div>
+            <div class="form-group">
+                <label for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+            </div>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+        </form>
+
+        <div class="extra-links">
+            <p>Forgot your password? <a href="forgotPass.html">Reset it here</a></p>
+        </div>
+        <div class="switch-form">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Navbar Styling */
+
+.profile-icon-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Keep nav items horizontal */
+  align-items: center;
+  background-color: #fff; /* Refined color for the navbar */
+  padding: 0.8rem 1.5rem;
+  color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+nav .logo a {
+  font-size: 1.2rem; /* Medium font size */
+  font-weight: 500; /* Semi-bold for emphasis */
+  text-decoration: none;
+  color: #177109;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  margin-left: 200px;
+  font-style: italic;
+
+ 
+}
+
+nav .logo a:hover {
+  color: #177109; /* Attractive hover effect */
+}
+
+/* Navbar Links Container */
+nav .nav-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Center the nav links */
+  flex-grow: 1;
+  margin-right: 200px;
+  
+}
+
+/* Navbar Links Styling */
+nav .nav-links a {
+  color: #177109;
+  text-decoration: none;
+  font-size: 1rem; /* Smaller, but readable font */
+  text-transform: uppercase;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+}
+    .responsive-container-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .bigContainer {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .ultimateImg {
+      text-align: center;
+    }
+
+    .ultimateImg img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    .allText {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .headingText {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .explore {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .explore:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="/public/images/logo.png" height="70" width="70" alt="Logo"></a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="calculate.html">Calculate</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="signin.html" class="profile-icon-link">
+        <img src="/public/images/profile-icon.png" alt="Profile Icon" class="profile-icon">
+      </a>
+    </div>
+  </nav>
+
+  <!-- About Us Section -->
+  <div class="responsive-container-block bigContainer">
+    <div class="responsive-container-block Container bottomContainer">
+      <div class="ultimateImg">
+        <img class="mainImg" src="/public/images/carbonFootprint.png" alt="Main Image">
+      </div>
+      <div class="allText bottomText">
+        <p class="text-blk headingText">About Us 🌍</p>
+        <p class="text-blk description">
+          At Carbon Footprint Calculator, we believe that every step toward sustainability makes a difference. Our mission is to empower individuals and businesses to take informed actions by understanding their environmental impact. 🌱
+        </p>
+        <p class="text-blk description">
+          With climate change becoming one of the most pressing challenges of our time, we aim to bridge the gap between awareness and action. By providing a simple, user-friendly platform, we make it easy for you to calculate, analyze, and reduce your carbon footprint. ✨
+        </p>
+        <p class="text-blk headingText">Why Choose Us? 🤔</p>
+        <ul class="description">
+          <li>🔬 <strong>Science-Driven Approach:</strong> Our calculator is built on reliable data and methodologies to ensure accurate results.</li>
+          <li>💻 <strong>User-Centric Design:</strong> We prioritize simplicity, so everyone—from eco-warriors to first-time users—can take meaningful steps.</li>
+          <li>📊 <strong>Actionable Insights:</strong> Beyond numbers, we offer practical tips and resources to help you live sustainably.</li>
+        </ul>
+        <p class="text-blk headingText">Join Us in Making a Difference 🌟</p>
+        <p class="text-blk description">
+          Together, we can create a greener, more sustainable future. Whether you’re an individual looking to reduce your footprint or an organization seeking accountability, we’re here to guide you every step of the way. 🤝 Start your journey today—because small changes lead to big impacts. 🌿
+        </p>
+
+        <!-- Calculate Button -->
+        <a class="explore" href="calculate.html">Calculate</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Carbon Footprint Calculator. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
